@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Framework Suggester</title>
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='config.js') }}" type="module" defer></script>
     <script src="{{ url_for('static', filename='script.js') }}" type="module" defer></script>
 </head>
 <body>
     <h1>Decision-Making Framework Suggester</h1>
-    <textarea id="inputText" placeholder="Describe your situation..."></textarea>
-    <button id="submitBtn">Get Frameworks</button>
+    <div class="input-container">
+        <p>Describe your situation or decision-making challenge, and we'll suggest the most appropriate frameworks to help you make a better decision.</p>
+        <textarea id="inputText" placeholder="Describe your situation or decision-making challenge..."></textarea>
+        <button id="submitBtn">Get Frameworks</button>
+    </div>
     <div id="result"></div>
 </body>
 </html> 
